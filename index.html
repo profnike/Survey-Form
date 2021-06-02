@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Survey Form</title>
+</head>
+<body>
+    <h1 id="title">Bakesandmore Survey Form</h1>
+    <p id="description"><i><b>Thank you for  taking the time to help us improve our services</b></i></p>
+    <form id="survey-form" action="#">
+        <div>
+        <label for="name" id="name-label">Name</label><br>
+        <input type="text" id="name" placeholder="Enter your name" required>
+    </div>
+    <div>
+        <label for="email" id=email-label>Email</label><br>
+        <input type="email" name="email" placeholder="Enter your Email" id="email"  required>
+    </div>
+    <div>
+        <label for="age" id="number-label">Age (optional)</label><br>
+        <input type="number" id="number" placeholder="Age" min="10" max="50" name="age" required>
+        </div>
+        <p>Which option best describes your current role?</p>
+        <label for="Select current role"></label>
+            <select name="role" id="dropdown">
+                <option value="">Select current role</option>
+                <option value="Student">Student</option>
+                <option value="Full Time Job">Employed</option>
+                <option value="Full Time Learner">Unemployed</option>
+                <option value="Prefer not to say">Prefer not to say</option>
+                <option value="Other">Other</option>
+            </select>
+        
+        <div>
+            <p>Would you recommend Bakesandmore to a friend?</p>
+            <div>
+                <input type="radio" class="radio" name="recommendation" id="Definitely">
+                <label for="Definitely">Definitely</label>
+            </div>
+
+            <div>
+                <input type="radio" class="radio" name="recommendation" id="maybe">
+                <label for="maybe">Maybe</label>
+            </div>
+
+            <div>
+                <input type="radio" class="radio"  name="recommendation" id="not sure">
+                <label for="not sure">Not sure</label>
+            </div>
+        </div>
+        <p>What is your favorite category of Bakesandmore?</p>
+        <label for="Select current role"></label>
+            <select name="feature" id="dropdown">
+                <option value="">Select an option</option>
+                <option value="Challenges">Cakes</option>
+                <option value="Projects">Pie</option>
+                <option value="Community">Bread</option>
+                <option value="Open source">Biscuits</option>
+                
+            </select>
+
+        <div>
+            <p>What would you like to see improved?
+                (check all that apply)</p>
+            <div>
+                <input type="checkbox" class="checkbox" value="Chicken Pie" name="Improve" id="Chicken Pie">
+                <label for="Chicken Pie" >Chicken Pie</label>
+            </div>
+
+            <div>
+                <input type="checkbox" class="checkbox" value="Cheesecake" name="Improve" id="Cheesecake">
+                <label for="Cheesecake">Cheese cake</label>
+            </div>
+
+            <div>
+                <input type="checkbox" value="Doughnut" class="checkbox" name="Improve" id="Doughnut">
+                <label for="Doughnut">Doughnut</label>
+            </div>
+
+            <div>
+                <input type="checkbox"  value="Meatpie"class="checkbox" name="Improve" id="Meatpie">
+                <label for="Meatpie" >Meatpie</label>
+            </div>
+
+            <div>
+                <input type="checkbox" value="Pizza" class="checkbox"  name="Improve" id="Pizza">
+                <label for="Pizza">Pizza</label>
+            </div>
+
+            <div>
+                <input type="checkbox" value="Buns" class="checkbox" name="Improve" id="Buns">
+                <label for="Buns">Buns</label>
+            </div>
+
+            <div>
+                <input type="checkbox" value="Snack cakes" class="checkbox" name="Improve" id="Snack cakes">
+                <label for="Snack cakes">Snack cake</label>
+            </div>
+
+            <div>
+                <input type="checkbox" value="Cookies" class="checkbox" name="Improve" id="Cookies">
+                <label for="Cookies">Cookies</label>
+            </div>
+
+            <div>
+                <input type="checkbox" value="rolls" class="checkbox" name="Improve" id="rolls">
+                <label for="rolls" >rolls</label>
+            </div>
+
+            <div>
+                <input type="checkbox" value="Coffee cake" class="checkbox" name="Improve" id="Coffee cake">
+                <label for="Coffee cake">Coffee cake</label>
+            </div>
+
+            <div>
+                <input type="checkbox" value="Biscuits" class="checkbox" name="Improve" id="Biscuits">
+                <label for="Biscuits">Biscuit</label>
+                
+            </div>
+        </div>
+
+    
+    <p>Any comments or suggestions?</p>
+    <div>
+    <textarea placeholder="Enter your comments here..."></textarea>
+    </div>
+    <div>
+    <button type="submit" value="submit" id="submit">Submit</button>
+    </div>
+</form>
+</body>
+</html>
